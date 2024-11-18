@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React</title>
+  </head>
+  <body>
+    <div id="root">
+      <h1>hello world</h1>
+    </div>
+  </body>
+  <script>
+    // how does browser know this is document and this is createElement  => this all are possible because browser have APIS and browser have JS engine inside it and it has WINDOW object which is the super parent
+
+    // The window object is supported by all browsers. It represents the browser's window.
+    // All global JavaScript objects, functions, and variables automatically become members of the window object.
+
+    const element = document.createElement("h2");
+    element.innerHTML = "hello EveryOne from javascript";
+
+    const ankit = document.getElementById("root");
+    ankit.appendChild(element);
+  </script>
+</html>
